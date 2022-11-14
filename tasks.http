@@ -2,3 +2,26 @@
 
 
 GET {{api}}
+###
+GET {{api}}/1
+###
+GET {{api}}/count
+###
+POST http://localhost:8000/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "title":"Dev",
+    "description":"Migrar base de datos"
+}
+
+###
+DELETE {{api}}/5
+
+###
+PUT {{api}}/1
+content-type: application/json
+
+{
+    "title":"Desarrollo Prioridad"
+}
